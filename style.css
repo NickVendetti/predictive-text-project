@@ -1,46 +1,78 @@
 * {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 :focus {
- /* TODO */
+  outline: none;
 }
 
 body {
-  /* TODO */
+  background: linear-gradient(135deg, #f06, #4a90e2);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 input {
- /* TODO */
+  border: 2px solid #f06;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #f06, #4a90e2);
+  padding: 10px;
+  font-size: 16px;
 }
 
 .search-container {
- /* TODO */
+  position: relative;
+  width: 300px;
 }
+
 .search-container input,
 .search-container .suggestions {
-  /* TODO */
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
 }
+
 .search-container input {
- /* TODO */
+  border: 2px solid #f06;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #f06, #4a90e2);
 }
+
 .search-container .suggestions {
-   /* TODO */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border: 2px solid #f06;
+  border-radius: 5px;
+  background: (135deg, #f06, #4a90e2);
+  max-height: 150px;
+  overflow-y: auto;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 ul {
-  /* TODO */
-}
-ul.has-suggestions {
-  /* TODO */
-}
-ul li {
-  /* TODO */
-}
-ul li:hover {
-  /* TODO */
+  padding: 0;
+  margin: 0;
 }
 
-input {
-   /* TODO */
+ul.has-suggestions {
+  border: 1px;
+  background: linear-gradient(135deg, #f06, #4a90e2);
+}
+
+ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+ul li:hover {
+  background: linear-gradient(135deg, #f06, #4a90e2);
 }
